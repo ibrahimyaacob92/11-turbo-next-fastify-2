@@ -1,8 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --filter=!native-app",
     "build": "turbo run build",
+    "build:web": "turbo run build --filter=web-app",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
   },
