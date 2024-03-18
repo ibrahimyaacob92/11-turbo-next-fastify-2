@@ -21,6 +21,12 @@
     "lint": {},
     "clean": {
       "cache": false
+    },
+    "start": {
+      "persistent": true,
+      "dependsOn": [
+        "^build"
+      ]
     }
   }
 }
