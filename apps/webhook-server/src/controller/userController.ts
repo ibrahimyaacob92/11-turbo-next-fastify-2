@@ -6,9 +6,6 @@ const url = process.env.CONVEX_URL!;
 const client = new ConvexHttpClient(url);
 
 export default async function userController(fastify: FastifyInstance) {
-  // const hello = client.query(api)
-  // GET /api/v1/user
-
   const data = await client.query(api.notes.getNotes);
   console.log({ data });
 

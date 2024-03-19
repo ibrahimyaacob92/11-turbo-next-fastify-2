@@ -32,6 +32,9 @@ importers:
       '@packages/backend':
         specifier: '*'
         version: link:../../packages/backend
+      '@packages/utils':
+        specifier: workspace:^
+        version: link:../../packages/utils
       '@radix-ui/react-avatar':
         specifier: ^1.0.4
         version: 1.0.4(@types/react-dom@18.2.22)(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
@@ -136,6 +139,12 @@ importers:
       openai:
         specifier: ^4.29.1
         version: 4.29.1
+
+  packages/utils:
+    devDependencies:
+      typescript:
+        specifier: ^5.4.2
+        version: 5.4.2
 
 packages:
 

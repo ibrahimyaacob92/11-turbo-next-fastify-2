@@ -1,12 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --filter=web-app",
     "start": "turbo run start",
     "build": "turbo run build",
-    "build-backend": "turbo run build --filter=webhook-server",
-    "start-backend": "turbo run start --filter=webhook-server",
-    "start-web": "turbo run start --filter=web-app",
+    "build:backend": "turbo run build --filter=webhook-server",
+    "start:backend": "turbo run start --filter=webhook-server",
+    "start:web": "turbo run start --filter=web-app",
     "build:web": "turbo run build --filter=web-app",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
