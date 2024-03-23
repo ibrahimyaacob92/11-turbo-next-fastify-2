@@ -8,4 +8,6 @@ export default defineSchema({
     content: v.string(),
     summary: v.optional(v.string()),
   }),
+
+  accounts: defineTable({}),
 });

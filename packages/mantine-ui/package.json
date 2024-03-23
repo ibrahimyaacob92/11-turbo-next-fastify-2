@@ -1,11 +1,9 @@
 {
-  "name": "@packages/ui",
+  "name": "@packages/mantine-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc"
-  },
+  "main": "index.tsx",
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
